@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+
+  "name": "GitHub HowTo",
+  "description": "Overlay Help.GitHub.com articles right on Dot-Com",
+  "version": "1.0",
+  "content_scripts": [
+    {
+      "css": ["github.css"],
+      "matches": ["http://www.github.com/*", "https://www.github.com/*", "http://github.com/*", "https://github.com/*"]
+    }
+  ],
+  "permissions": ["https://help.github.com/*", "http://www.github.com/*", "https://www.github.com/*", "http://github.com/*", "https://github.com/*", "tabs"],
+  "background": {
+    "scripts": [
+      "jquery-2.1.1.min.js",
+      "howto.js"
+    ],
+    "persistent": false
+  },
+  "browser_action": {
+    "default_icon": "icon-off.png"
+  }
+}

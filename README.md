@@ -8,8 +8,8 @@ Provides in-the-browser interactive mouse-over tooltips and links driven by [Hel
 
 ## Installation
 
-1. Launch Google Chrome
+1. Launch [Google Chrome](www.google.com/chrome)
 2. Browse to [`chrome://extensions`](chrome://extensions)
-3. Enable Developer mode
+3. Enable [Developer mode](https://developer.chrome.com/extensions/getstarted#unpacked)
 4. Drag repo folder into Extensions page
 5. Start using it

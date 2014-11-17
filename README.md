@@ -1,5 +1,11 @@
 # Google Chrome Help.GitHub.com extension
 
+## What is it
+
+Provides in-the-browser interactive mouse-over tooltips and links driven by [Help.GitHub.com](https://help.github.com) for new GitHub.com users.
+
+![Google Chrome Help.GitHub.com extension preview](docs/preview-usage.gif)
+
 ## Installation
 
 1. Launch Google Chrome
@@ -7,7 +13,3 @@
 3. Enable Developer mode
 4. Drag repo folder into Extensions page
 5. Start using it
-
-## Preview
-
-![Google Chrome Help.GitHub.com extension preview](docs/preview-usage.gif)

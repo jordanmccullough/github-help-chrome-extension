@@ -69,6 +69,7 @@ function github(){
         highlight.css("left", event.data.offsetLeft + "px");
         highlight.toggle();
 
+        answer.css("top", event.data.offsetTop+$(event.data.selector).height() + "px");
         answer.css("left", event.data.offsetLeft + "px");
         answer.show();
         answer.load(event.data.link);

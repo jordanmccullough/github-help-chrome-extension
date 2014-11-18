@@ -4,10 +4,12 @@
 
 var page = $(".site");
     container = $('<div id="howto-container"></div>'),
+    highlight = $('<div class="gh-highlight"></div>');
     answer = $('<div class="answer"></div>');
 
 $("body").append(container);
 container.append(answer);
+container.append(highlight);
 
 /////////////////////////////////////////////
 // Mapping to page content and Help links
@@ -33,7 +35,14 @@ var helpMap = [
     description: "Commit tease",
     selector: ".commit-tease",
     helpLink: "https://help.github.com/articles/differences-between-commit-views/"
+  },
+  {
+    description: "Clone URL box",
+    selector: ".repository-sidebar",
+    helpLink: "https://help.github.com/articles/differences-between-commit-views/"
   }
+
+
 ];
 
 function github(){
@@ -54,19 +63,36 @@ function github(){
       helpIcon.css("left", offset.left + "px");
     }
 
-    helpIcon.mouseover({link: helpLink, offsetLeft: offset.left, offsetTop: offset.top},
+    helpIcon.mouseover({selector: helpMap[i].selector, link: helpLink, offsetLeft: offset.left, offsetTop: offset.top},
       function(event){
-        page.css("-webkit-transition", "100ms -webkit-filter linear")
-        page.css("-webkit-filter", "blur(8px)");
+        // $(event.data.selector).css("box-shadow", "0 0 3px green");
+
+
+        highlight.width($(event.data.selector).width());
+        highlight.height($(event.data.selector).height());
+        highlight.css("top", event.data.offsetTop + "px");
+        highlight.css("left", event.data.offsetLeft + "px");
+        highlight.toggle();
+
+
+        // page.css("-webkit-transition", "100ms -webkit-filter linear")
+        // page.css("-webkit-filter", "blur(8px)");
+
         answer.css("top", event.data.offsetTop + "px");
         answer.css("left", event.data.offsetLeft + "px");
         answer.show();
         answer.load(event.data.link);
       }
     );
-    helpIcon.mouseout(
-      function(){
-        page.css("-webkit-filter", "");
+    helpIcon.mouseout({selector: helpMap[i].selector},
+      function(event){
+        // $(event.data.selector).css("box-shadow", "none");
+
+        highlight.toggle();
+
+        // $(event.data.selector).toggleClass("highlight");
+
+        // page.css("-webkit-filter", "");
         answer.hide();
         answer.html("");
       }

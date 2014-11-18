@@ -41,8 +41,6 @@ var helpMap = [
     selector: ".repository-sidebar",
     helpLink: "https://help.github.com/articles/differences-between-commit-views/"
   }
-
-
 ];
 
 function github(){
@@ -65,20 +63,12 @@ function github(){
 
     helpIcon.mouseover({selector: helpMap[i].selector, link: helpLink, offsetLeft: offset.left, offsetTop: offset.top},
       function(event){
-        // $(event.data.selector).css("box-shadow", "0 0 3px green");
-
-
         highlight.width($(event.data.selector).width());
         highlight.height($(event.data.selector).height());
         highlight.css("top", event.data.offsetTop + "px");
         highlight.css("left", event.data.offsetLeft + "px");
         highlight.toggle();
 
-
-        // page.css("-webkit-transition", "100ms -webkit-filter linear")
-        // page.css("-webkit-filter", "blur(8px)");
-
-        answer.css("top", event.data.offsetTop + "px");
         answer.css("left", event.data.offsetLeft + "px");
         answer.show();
         answer.load(event.data.link);

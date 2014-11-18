@@ -17,29 +17,34 @@ container.append(highlight);
 
 var helpMap = [
   {
-    description: "Creating a pull request",
-    selector: ".button",
-    helpLink: "https://help.github.com/articles/creating-a-pull-request/"
+    description: "GitHub Logo",
+    selector: ".header-logo-invertocat",
+    helpLink: "https://help.github.com/articles/searching-github/"
   },
   {
-    description: "Permissions and repo owner",
-    selector: ".entry-title",
-    helpLink: "https://help.github.com/articles/permission-levels-for-a-user-account-repository/"
+    description: "User avatar",
+    selector: ".avatar",
+    helpLink: "https://help.github.com/articles/how-do-i-set-up-my-profile-picture/"
   },
   {
-    description: "Commit history page",
-    selector: ".js-social-container",
+    description: "Repo name & path",
+    selector: ".breadcrumb",
+    helpLink: "https://help.github.com/articles/working-with-repositories/"
+  },
+  {
+    description: "PR, branch selector",
+    selector: ".file-navigation",
+    helpLink: "https://help.github.com/articles/using-pull-requests/"
+  },
+  {
+    description: "Commits page menu link",
+    selector: ".commits",
+    helpLink: "https://help.github.com/articles/editing-files-in-your-repository/"
+  },
+  {
+    description: "Unwatch/watch button",
+    selector: ".subscription",
     helpLink: "https://help.github.com/articles/watching-repositories/"
-  },
-  {
-    description: "Commit tease",
-    selector: ".commit-tease",
-    helpLink: "https://help.github.com/articles/differences-between-commit-views/"
-  },
-  {
-    description: "Clone URL box",
-    selector: ".repository-sidebar",
-    helpLink: "https://help.github.com/articles/differences-between-commit-views/"
   }
 ];
 

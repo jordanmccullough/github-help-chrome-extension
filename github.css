@@ -1,3 +1,5 @@
+@import "octicons/octicons.css";
+
 #howto-container{
   top: 0;
   left: 0;
@@ -8,7 +10,7 @@
 }
 
 .gh-highlight{
-  box-shadow: 0 0 15px purple;
+  box-shadow: 0 0 15px #932d70;
   position: absolute;
   display: none;
   padding: 10px;
@@ -34,29 +36,33 @@
 
 .question{
   position: absolute;
-  height: 30px;
-  width: 30px;
+  height: 20px;
+  width: 20px;
   left: -1000px;
   top: -1000px;
-  margin-left: -30px;
-  background: rgba(255,0,0,.8);
+  margin-left: -20px;
+  background: #932d70;
   border-radius: 50%;
-  border: 1px solid #ff0000;
-  border-shadow: 0 0 0 3px #eee;
+  border: 1px solid #932d70;
+  box-shadow: 0 0 0 4px #fff;
+  transition: all 200ms;
 }
 
 .question:before{
-  content: "?";
+  content: "\f02c";
+  font: normal normal normal 16px/1 octicons;
   display: block;
   text-align: center;
   font-size: 16px;
-  height: 30px;
-  width: 24px;
-  line-height: 30px;
+  height: 18px;
+  width: 18px;
+  line-height: 18px;
 }
 
 .question:hover{
-  background: #ff0000;
+  box-shadow: 0 0 0 4px #932d70;
+  background: #932d70;
+  color: #fff;
 }
 
 a.question {

@@ -11,6 +11,7 @@
     }
   ],
   "permissions": ["https://help.github.com/*", "http://www.github.com/*", "https://www.github.com/*", "http://github.com/*", "https://github.com/*", "tabs"],
+  "web_accessible_resources": ["data/*.json"],
   "background": {
     "scripts": [
       "github-help.js"

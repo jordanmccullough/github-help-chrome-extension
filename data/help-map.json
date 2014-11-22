@@ -1,0 +1,32 @@
+[
+  {
+    "description": "GitHub Logo",
+    "selector": ".header-logo-invertocat",
+    "helpLink": "https://help.github.com/articles/searching-github/"
+  },
+  {
+    "description": "User avatar",
+    "selector": ".avatar",
+    "helpLink": "https://help.github.com/articles/how-do-i-set-up-my-profile-picture/"
+  },
+  {
+    "description": "Repo name & path",
+    "selector": ".breadcrumb",
+    "helpLink": "https://help.github.com/articles/working-with-repositories/"
+  },
+  {
+    "description": "PR, branch selector",
+    "selector": ".file-navigation",
+    "helpLink": "https://help.github.com/articles/using-pull-requests/"
+  },
+  {
+    "description": "Commits page menu link",
+    "selector": ".commits",
+    "helpLink": "https://help.github.com/articles/editing-files-in-your-repository/"
+  },
+  {
+    "description": "Unwatch/watch button",
+    "selector": ".subscription",
+    "helpLink": "https://help.github.com/articles/watching-repositories/"
+  }
+]

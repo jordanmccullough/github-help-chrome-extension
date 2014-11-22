@@ -14,7 +14,7 @@ function deactivate(){
   iconActive = false;
   chrome.browserAction.setIcon({"path":"icon-" + "off" + ".png"});
   chrome.tabs.executeScript(null, {file: "assets/jquery-2.1.1.min.js"}, function() {
-    chrome.tabs.executeScript(null, {file: "github-off.js"});
+    chrome.tabs.executeScript(null, {file: "deactivate.js"});
     chrome.browserAction.setIcon(
       {
         "path": {
@@ -37,7 +37,7 @@ function activate(){
     }
   );
   chrome.tabs.executeScript(null, {file: "assets/jquery-2.1.1.min.js"}, function() {
-    chrome.tabs.executeScript(null, {file: "github-on.js"});
+    chrome.tabs.executeScript(null, {file: "activate.js"});
   });
 }
 

@@ -18,8 +18,8 @@ function deactivate(){
     chrome.browserAction.setIcon(
       {
         "path": {
-          19: "icon-19-" + "off" + ".png",
-          38: "icon-38-" + "off" + ".png"
+          19: "images/icon-19-" + "off" + ".png",
+          38: "images/icon-38-" + "off" + ".png"
         }
       }
     );
@@ -31,8 +31,8 @@ function activate(){
   chrome.browserAction.setIcon(
     {
       "path": {
-        19: "icon-19-" + "on" + ".png",
-        38: "icon-38-" + "on" + ".png"
+        19: "images/icon-19-" + "on" + ".png",
+        38: "images/icon-38-" + "on" + ".png"
       }
     }
   );

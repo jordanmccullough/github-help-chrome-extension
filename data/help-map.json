@@ -1,55 +1,72 @@
 [
   {
-    "description": "GitHub Logo",
-    "selector": ".header-logo-invertocat",
+    "description": "Create a repository",
+    "selector": "[aria-label='Create new...']",
+    "helpLink": "https://help.github.com/articles/create-a-repo/"
+  },
+  {
+    "description": "Create a repository",
+    "selector": ".new-repo",
+    "helpLink": "https://help.github.com/articles/create-a-repo/"
+  },
+  {
+    "description": "Fork a repository",
+    "selector": ".fork-button",
+    "helpLink": "https://help.github.com/articles/fork-a-repo/"
+  },
+  {
+    "description": "Be social",
+    "selector": ".js-social-container",
+    "helpLink": "https://help.github.com/articles/be-social/"
+  },
+  {
+    "description": "Repository permissions",
+    "selector": ".entry-title",
+    "helpLink": "https://help.github.com/articles/what-are-the-different-access-permissions/"
+  },
+  {
+    "description": "Blocking a user",
+    "selector": ".user-actions",
+    "helpLink": "https://help.github.com/articles/blocking-a-user/"
+  },
+  {
+    "description": "Setting default branch",
+    "selector": "#change_default_branch",
+    "helpLink": "https://help.github.com/articles/setting-the-default-branch/"
+  },
+  {
+    "description": "Transferring a repository",
+    "selector": "#transfer_button",
+    "helpLink": "https://help.github.com/articles/transferring-a-repository/"
+  },
+  {
+    "description": "Renaming a repository",
+    "selector": "#rename_field",
+    "helpLink": "https://help.github.com/articles/renaming-a-repository/"
+  },
+  {
+    "description": "Searching GitHub",
+    "selector": ".js-site-search-form",
     "helpLink": "https://help.github.com/articles/searching-github/"
   },
   {
-    "description": "User avatar",
-    "selector": ".avatar",
-    "helpLink": "https://help.github.com/articles/how-do-i-set-up-my-profile-picture/"
+    "description": "About Notifications",
+    "selector": "[aria-label='You have unread notifications in this repository']",
+    "helpLink": "https://help.github.com/articles/about-notifications/"
   },
   {
-    "description": "Repo name & path",
-    "selector": ".breadcrumb",
-    "helpLink": "https://help.github.com/articles/working-with-repositories/"
+    "description": "About Stars",
+    "selector": ".star-button",
+    "helpLink": "https://help.github.com/articles/about-stars/"
   },
   {
-    "description": "PR, branch selector",
-    "selector": ".file-navigation",
+    "description": "Using Pull Requests",
+    "selector": "[aria-label='Pull Requests']",
     "helpLink": "https://help.github.com/articles/using-pull-requests/"
   },
   {
-    "description": "Commits page menu link",
-    "selector": ".commits",
-    "helpLink": "https://help.github.com/articles/editing-files-in-your-repository/"
-  },
-  {
-    "description": "Unwatch/watch button",
-    "selector": ".subscription",
-    "helpLink": "https://help.github.com/articles/watching-repositories/"
-  },
-  {
-    "description": "Pull Request/Issue number",
-    "selector": ".gh-header-number",
-    "helpLink": "https://help.github.com/articles/closing-issues-via-commit-messages/"
-  },
-  {
-    "description": "Pull Request/Issue status",
-    "selector": ".state",
-    "helpLink": "https://help.github.com/articles/closing-issues-via-commit-messages/"
-  },
-  {
-    "description": "Repository star action button",
-    "selector": ".starring-container",
-    "helpLink": "https://help.github.com/articles/closing-issues-via-commit-messages/"
-  },
-  {
-    "description": "Clone URLs",
-    "selector": ".clone-options",
-    "helpLink": "https://help.github.com/articles/closing-issues-via-commit-messages/"
+    "description": "Issues",
+    "selector": "[aria-label='Issues']",
+    "helpLink": "https://help.github.com/articles/about-issues/"
   }
-
-
-
 ]

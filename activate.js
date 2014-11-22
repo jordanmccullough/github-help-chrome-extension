@@ -40,38 +40,41 @@
           offset     = target.offset(),
           helpLink   = helpMap[i].helpLink + " .article-body p:first-child";
 
-      if (offset.top > 0 && offset.left > 0){
-        helpIcon.css("top", offset.top + "px");
-        helpIcon.css("left", offset.left + "px");
+      if (offset){
+        if (offset.top > 0 && offset.left > 0){
+          helpIcon.css("top", offset.top + "px");
+          helpIcon.css("left", offset.left + "px");
+        }
+
+
+        helpIcon.mouseover({selector: helpMap[i].selector, link: helpLink, offsetLeft: offset.left, offsetTop: offset.top},
+          function(event){
+            highlight.width($(event.data.selector).width());
+            highlight.height($(event.data.selector).height());
+            highlight.css("top", event.data.offsetTop + "px");
+            highlight.css("left", event.data.offsetLeft + "px");
+            highlight.toggle();
+
+            answer.css("top", event.data.offsetTop+$(event.data.selector).height() + "px");
+            answer.css("left", event.data.offsetLeft + "px");
+            answer.show();
+            answer.load(event.data.link);
+          }
+        );
+        helpIcon.mouseout({selector: helpMap[i].selector},
+          function(event){
+            // $(event.data.selector).css("box-shadow", "none");
+
+            highlight.toggle();
+
+            // $(event.data.selector).toggleClass("highlight");
+
+            // page.css("-webkit-filter", "");
+            answer.hide();
+            answer.html("");
+          }
+        );
       }
-
-      helpIcon.mouseover({selector: helpMap[i].selector, link: helpLink, offsetLeft: offset.left, offsetTop: offset.top},
-        function(event){
-          highlight.width($(event.data.selector).width());
-          highlight.height($(event.data.selector).height());
-          highlight.css("top", event.data.offsetTop + "px");
-          highlight.css("left", event.data.offsetLeft + "px");
-          highlight.toggle();
-
-          answer.css("top", event.data.offsetTop+$(event.data.selector).height() + "px");
-          answer.css("left", event.data.offsetLeft + "px");
-          answer.show();
-          answer.load(event.data.link);
-        }
-      );
-      helpIcon.mouseout({selector: helpMap[i].selector},
-        function(event){
-          // $(event.data.selector).css("box-shadow", "none");
-
-          highlight.toggle();
-
-          // $(event.data.selector).toggleClass("highlight");
-
-          // page.css("-webkit-filter", "");
-          answer.hide();
-          answer.html("");
-        }
-      );
     }
   }
 })();

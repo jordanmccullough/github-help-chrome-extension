@@ -22,14 +22,11 @@
 }
 
 .answer{
-  position: fixed;
-  /*top: 10%;*/
-  /*left: 35%;*/
+  position: absolute;
   display: none;
   height: auto;
   width: 30%;
   margin-top: 10px;
-  margin-left: -5px;
   padding: 10px;
   overflow: scroll;
   background: rgba(255,255,255,.95);

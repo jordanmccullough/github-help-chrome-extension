@@ -21,9 +21,7 @@
 }
 
 .answer{
-  position: fixed;
-  /*top: 10%;*/
-  /*left: 35%;*/
+  position: absolute;
   display: none;
   height: auto;
   width: 30%;

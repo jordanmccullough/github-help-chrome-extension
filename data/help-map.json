@@ -28,5 +28,28 @@
     "description": "Unwatch/watch button",
     "selector": ".subscription",
     "helpLink": "https://help.github.com/articles/watching-repositories/"
+  },
+  {
+    "description": "Pull Request/Issue number",
+    "selector": ".gh-header-number",
+    "helpLink": "https://help.github.com/articles/closing-issues-via-commit-messages/"
+  },
+  {
+    "description": "Pull Request/Issue status",
+    "selector": ".state",
+    "helpLink": "https://help.github.com/articles/closing-issues-via-commit-messages/"
+  },
+  {
+    "description": "Repository star action button",
+    "selector": ".starring-container",
+    "helpLink": "https://help.github.com/articles/closing-issues-via-commit-messages/"
+  },
+  {
+    "description": "Clone URLs",
+    "selector": ".clone-options",
+    "helpLink": "https://help.github.com/articles/closing-issues-via-commit-messages/"
   }
+
+
+
 ]

@@ -53,10 +53,18 @@
             highlight.height($(event.data.selector).height());
             highlight.css("top", event.data.offsetTop + "px");
             highlight.css("left", event.data.offsetLeft + "px");
-            highlight.toggle();
+
 
             answer.css("top", event.data.offsetTop+$(event.data.selector).height() + "px");
-            answer.css("left", event.data.offsetLeft + "px");
+
+            if( ((answer.width() + event.data.offsetLeft )) > page.width() ){
+              answer.css("left", (event.data.offsetLeft-answer.width()) + "px");
+            }
+            else{
+              answer.css("left", event.data.offsetLeft + "px");
+            }
+            highlight.toggle();
+
             answer.show();
             answer.load(event.data.link);
           }

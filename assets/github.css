@@ -45,7 +45,7 @@
   margin-top: -16px;
   background: rgba(147,45,112,.6);
   color: #fff;
-  transition: all 200ms;
+  transition: background 200ms, box-shadow 200ms, border-radius 200ms, height 200ms, width 200ms, margin 200ms;
   border-top-left-radius: 50%;
   border-top-right-radius: 50%;
   border-bottom-left-radius: 50%;

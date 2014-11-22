@@ -13,7 +13,6 @@
   "permissions": ["https://help.github.com/*", "http://www.github.com/*", "https://www.github.com/*", "http://github.com/*", "https://github.com/*", "tabs"],
   "background": {
     "scripts": [
-      "jquery-2.1.1.min.js",
       "howto.js"
     ],
     "persistent": false

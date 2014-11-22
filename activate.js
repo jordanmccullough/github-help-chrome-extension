@@ -46,6 +46,10 @@
           helpIcon.css("left", offset.left + "px");
         }
 
+        if (offset.top < helpIcon.height()){
+          helpIcon.addClass("top");
+        }
+
 
         helpIcon.mouseover({selector: helpMap[i].selector, link: helpLink, offsetLeft: offset.left, offsetTop: offset.top},
           function(event){
@@ -55,7 +59,7 @@
             highlight.css("left", event.data.offsetLeft + "px");
 
 
-            answer.css("top", event.data.offsetTop+$(event.data.selector).height() + "px");
+            answer.css("top", event.data.offsetTop+$(event.data.selector).height() + ((offset.top < helpIcon.height()) ? helpIcon.height() : 0) + "px");
 
             if( ((answer.width() + event.data.offsetLeft )) > page.width() ){
               answer.css("left", (event.data.offsetLeft-answer.width()) + "px");
@@ -71,13 +75,7 @@
         );
         helpIcon.mouseout({selector: helpMap[i].selector},
           function(event){
-            // $(event.data.selector).css("box-shadow", "none");
-
             highlight.toggle();
-
-            // $(event.data.selector).toggleClass("highlight");
-
-            // page.css("-webkit-filter", "");
             answer.hide();
             answer.html("");
           }

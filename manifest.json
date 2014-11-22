@@ -6,7 +6,7 @@
   "version": "1.0",
   "content_scripts": [
     {
-      "css": ["github.css"],
+      "css": ["assets/github.css"],
       "matches": ["http://www.github.com/*", "https://www.github.com/*", "http://github.com/*", "https://github.com/*"]
     }
   ],
